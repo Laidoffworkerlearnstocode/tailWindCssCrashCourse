@@ -28,6 +28,20 @@
             <a class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedlight">
                 Get Started
             </a>
+            <!-- hamburger menu -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <img src="./img/hamburger-menu.svg" class="h-12">
+            </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col hidden items-center py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Pricing</a>
+                <a href="#">Product</a>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Community</a>
+            </div>
         </div>
     </nav>
     <!-- hero section     -->
@@ -221,6 +235,9 @@
         <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
             <!-- logo and social links container -->
             <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Copyright &copy; 2023, All Right Reserved
+                </div>
                 <!-- logo -->
                 <div>
                     <img src="./img/logo-white.svg" class="h-8" alt="logo-white">
@@ -264,14 +281,20 @@
                 </div>
             </div>
             <!-- input container -->
-            <div class="flex flex-col justify-between">
-                <form>
-                    <div class="flex space-x-3">
-                        <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
-                    </div>
+            <div class="flex flex-col justify-between items-center">
+                <form class="flex space-x-4">
+                    <input type="text" class="flex-1 px-4 rounded-full focus:outline-none" placeholder="Updates in your inbox">
+                    <button class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedlight focus:outline-none">
+                        Go
+                    </button>
                 </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2023, All Right Reserved
+                </div>
             </div>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
